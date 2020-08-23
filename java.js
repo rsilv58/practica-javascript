@@ -32,6 +32,23 @@ console.log(numeros);
 // mostrar el array en la pagina
 mostrarArray(numeros);
 
-//Invertir el orden
+//ordenar y mostrar
 numeros.sort(function(a,b){return a-b});
 mostrarArray(numeros, "ordenado");
+
+//Invertir y mostrar
+numeros.reverse();
+mostrarArray(numeros, "revertido");
+
+// busqueda
+var busqueda = parseInt(prompt('Introduce un número a buscar',0));
+
+var posicion = numeros.findIndex(numero => numero == busqueda);
+
+if (posicion && posicion != -1) {
+    document.write("</hr><h1>ENCONTRADO</h1>");
+    document.write("<h1>Posicion de la busqueda: " + posicion + "</h1>");
+}
+else {
+    document.write("<h1>NO ENCONTRADO</h1>");
+}
