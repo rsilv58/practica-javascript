@@ -1,2 +1,2 @@
 # practica-javascript
-curso avancado de javascript
+ejercicios básicos de javascript
